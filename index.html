@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/index.css" />
+    <script src="formvalidation.js" defer></script>
+    <title>Form Validation Scss</title>
+  </head>
+
+  <body>
+    <main>
+      <form action="/" method="post">
+        <h1>Sign Up</h1>
+        <div class="form__registration">
+          <div class="form__element" id="username-box">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              autocomplete="off"
+              maxlength="20"
+            />
+          </div>
+
+          <div class="form__element" id="email-box">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="off" />
+          </div>
+
+          <div class="form__element" id="passwords-box">
+            <label for="password1">Password:</label>
+            <input
+              type="password"
+              id="password1"
+              name="password1"
+              autocomplete="on"
+              minlength="4"
+              maxlength="20"
+            />
+            <span class="show__password"
+              ><img src="pics/eye-svgrepo-com.svg" alt=""
+            /></span>
+          </div>
+
+          <div class="form__element" id="passwords-box">
+            <label for="password2">Confirm Password:</label>
+            <input
+              type="password"
+              id="password2"
+              name="password2"
+              autocomplete="on"
+              minlength="4"
+              maxlength="20"
+            />
+            <span class="show__password"
+              ><img src="pics/eye-svgrepo-com.svg" alt=""
+            /></span>
+          </div>
+          <div class="infobox">
+            <h6>Username must:</h6>
+            <p>Be between 4-20 characters.</p>
+            <p>Can only contain letters and numbers.</p>
+            <p>Can't contain spaces</p>
+            <br />
+            <h6>Password must:</h6>
+            <p>Be between 8 and 20 characters</p>
+          </div>
+          <div id="input__errors" class="infobox"></div>
+          <button type="submit" id="signUp-btn">Sign Up</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

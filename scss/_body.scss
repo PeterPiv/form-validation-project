@@ -1,0 +1,14 @@
+body {
+  background: radial-gradient(
+    circle,
+    rgb(238, 174, 202) 0%,
+    rgb(148, 187, 233) 100%
+  );
+  font-family: "Roboto-Bold", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 0.5px;
+}
+
+.hidden {
+  display: none;
+}
